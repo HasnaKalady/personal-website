@@ -1,4 +1,4 @@
-# personal-websit
+# personal-website
 Welcome to my personal portfolio website repository! This project showcases my work, skills, and projects in web development, UI/UX design, and more. 
 ## Table of Contents
 
