@@ -1,270 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <style>
-      .bullet-points {
-        list-style-type: disc;
-        padding-left: 20px;
-        text-align: justify; /* Justify text alignment */
-    }
+        .bullet-points {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: justify;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Navigation -->
     <nav id="desktop-nav">
-      <div class="logo">Hasna Kalady</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">Hasna Kalady</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Hasna Kalady</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">Hasna Kalady</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Hasna Kalady profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Hasna Kalady</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Hasna Kalady profile picture">
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/hasna-kalady-b74339237/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/HasnaKalady'"
-          />
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Hasna Kalady</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/hasna-kalady-b74339237/'">
+                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/HasnaKalady'">
+            </div>
         </div>
-      </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-             
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech Information Technology ,<br>From Cochin University Of Science and Technology, Year 2020-2024 </p>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>B.Tech in Information Technology <br> Cochin University Of Science and Technology (2020-2024)</p>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi there! I'm a passionate software engineering graduate, currently exploring AI as a fellow at Headstarter AI. I love crafting intuitive interfaces for websites and mobile apps, with a solid foundation in HTML, CSS, and UI/UX design.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hi there! I'm a passionate software engineering graduate, currently exploring the exciting world of AI as a fellow at Headstarter AI. I love turning innovative ideas into reality and am committed to creating impactful solutions that shape the future.<br><br>
-
-With a solid foundation in HTML and CSS and a keen eye for UI/UX design, I’m excited to embark on my professional journey. My academic background and hands-on internships have provided me with a rich mix of technical and creative skills. From 3D design and printing to crafting intuitive interfaces for websites and mobile apps, I thrive on bringing ideas to life. I'm well-versed in tools like Jira, Figma, Canva, VS Code, and Fusion 360.
-
-I excel in Agile and Scrum environments, where I value effective time management, teamwork, and innovative problem-solving. These skills are crucial in driving projects to success and creating a positive and productive work atmosphere.<br><br>
-
-When I'm not immersed in tech, you’ll find me indulging in photography, video editing, and drawing. These creative hobbies keep my artistic side alive and often inspire my professional projects.
-
-I'm on the lookout for an entry-level role where I can continue to grow, learn, and innovate. If you're seeking a motivated, creative, and technically skilled team member, let's connect and see how we can make a difference together!
-            </p>
-          </div>
         </div>
-      </div>
-      <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='#experience'"
-           />
     </section>
+
+    <!-- Experience Section -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Web Developer</h2>
-          
-            <h3>IBM SkillsBuild & CSRBOX</h3>
-            <ul class="bullet-points">
-              <li>Currently participating in a comprehensive Front-end Web Development Academic Internship program, enhancing proficiency in HTML, CSS, JavaScript, and UI/UX design.
-
-            </ul>
-           
-            
-            <div class="article-container">
-              <article>
-                
-              
-              </article>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Web Developer</h2>
+                <h3>IBM SkillsBuild & CSRBOX</h3>
+                <ul class="bullet-points">
+                    <li>Completed a Front-end Web Development Academic Internship, gaining expertise in HTML, CSS, JavaScript, and UI/UX design.</li>
+                </ul>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">UI/UX Designer</h2>
-            
-            <h3>ADM Education and Welfare Society| Remote</h3>
-            <ul class="bullet-points">
-                <li>Contributed to the design of user interfaces for web and mobile applications using tools like Figma and Adobe XD. Created wireframes, prototypes, and high-fidelity designs.</li>
-               
-                <li>Worked closely with developers, product managers, and other stakeholders to ensure design consistency and meet project requirements.</li>
-                <li>Designed visual elements such as icons, buttons, and banners, and ensured they aligned with the overall brand guidelines and design standards.</li>
-            </ul>
-            <div class="article-container">
-              <article>
-               
-              
-              </article>
+            <div class="details-container">
+                <h2 class="experience-sub-title">UI/UX Designer</h2>
+                <h3>ADM Education and Welfare Society | Remote</h3>
+                <ul class="bullet-points">
+                    <li>Designed UI for web and mobile apps using Figma and Adobe XD.</li>
+                    <li>Collaborated with developers and stakeholders to maintain design consistency.</li>
+                    <li>Created visual elements such as icons, buttons, and banners.</li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-
-      
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Multimedia Project" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Multimedia Project</h2>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HasnaKalady/Ice-pellet-catchers'">GitHub</button>
             </div>
-            <h2 class="experience-sub-title project-title">Multimedia Project</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/HasnaKalady/Ice-pellet-catchers'"
-              >
-                Github
-              </button>
-              
-                
-              
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Smart Medical Project" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Smart Medical</h2>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/k59Ret65iqlURStLOfG30U/smart-medical-app?node-id=0-1'">Prototype</button>
             </div>
-          </div>
-        
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-
-            <h2 class="experience-sub-title project-title">Smart Medical</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.figma.com/proto/k59Ret65iqlURStLOfG30U/smart-medical-app?node-id=0-1&t=vPbdEeQdXFIOuhyn-1'"
-              >
-                Prototype
-              
-              </button>
-            </div>
-          </div>
-          
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='#contact'"
-    />
-
-      
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <p>I'm always excited to connect with fellow professionals, collaborate on new projects, or discuss innovative ideas. Whether you have a question, a project proposal, or just want to say hi, feel free to reach out. Let's create something amazing together!</p>
-      <div class="contact-info-upper-container">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">hasna.bmk@gmail.com</a></p>
+            <img src="./assets/email.png" alt="Email icon" class="icon">
+            <p><a href="mailto:hasna.bmk@gmail.com">hasna.bmk@gmail.com</a></p>
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon">
+            <p><a href="https://www.linkedin.com/in/hasna-kalady-b74339237/">LinkedIn</a></p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/hasna-kalady-b74339237/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Hasna Kalady. All Rights Reserved.</p>
+        <p>Copyright &#169; 2024 Hasna Kalady. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
